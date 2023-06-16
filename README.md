@@ -1,5 +1,5 @@
 # Curso: Desarrollo de Aplicaciones Fullstack Python Trainee v2.0
-## Grupo: 2
+Proyecto Grupal Módulo 6 del Grupo 2
 
 ## Instrucciones para unirse el proyecto:
 
@@ -19,5 +19,5 @@
     - Seleccionar el ubicado en la dirección /venv/scripts/python.exe (Generalmente es la opción recomendada)
     - Abrir una nueva terminal en Visual Studio Code y fijarse que diga (venv) al principio de la línea de la terminal
 7. Instalar los módulos requeridos:
-    `python -m pip install -r requirement.txt`
-Con los pasos anteriores deberían estar listos con los pasos iniciales. Felicidades, se merecen un panchito.
+    - `python -m pip install -r requirement.txt`
+8. Con los pasos anteriores deberían estar listos con los pasos iniciales. Felicidades, se merecen un panchito.
