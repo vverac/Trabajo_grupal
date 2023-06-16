@@ -1,0 +1,33 @@
+{% extends 'app_tlv/base.html' %}
+{% load static %}
+
+{% block titulo %} Mis Inmuebles {% endblock %}
+
+{% block contenido %}
+<section class="seccion">
+  <div class="card contacto">
+    <div class="card-body">
+      <h5 class="card-title">Formulario de Contacto</h5>
+      <form action="/enviar" method="post">
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="asunto">Asunto</label>
+          <input type="text" class="form-control" id="asunto" name="asunto" required>
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+  </div>
+</section>
+{% endblock %}
