@@ -32,9 +32,15 @@
         <li class="nav-item"><a class="nav-link" href={% url "home" %}> Inicio</a></li>
         <li class="nav-item"><a class="nav-link" href={% url 'clientes' %}> Clientes</a></li>
         <li class="nav-item"><a class="nav-link" href={% url 'proveedores' %}> Registro Proveedores</a></li>
+        <li class="nav-item"><a class="nav-link" href={% url 'login' %}> Login</a></li>
+
       </ul>
     </nav>
-    {% block contenido %}{% endblock %} {% block destacados %}{% endblock %}
+
+    {% block contenido %}{% endblock %}
+    
+    {% block destacados %}{% endblock %}
+    
     <footer class="jumbotron">
       <div class="container">
         <div class="row">

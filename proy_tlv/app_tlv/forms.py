@@ -5,7 +5,10 @@ from .models import Proveedor
 class ProveedorForm(forms.ModelForm):
   class Meta:
       model= Proveedor
-      # fields = ['nombre','direccion','email']
-      # es lo mismo estamos usando todos los datos
       fields = '__all__'
-# tenemos que tener el modelo de escuela en este caso
+
+
+class LoginForm(forms.Form):
+  nombre = forms.CharField(widget=forms.TextInput)
+  password = forms.CharField(widget=forms.PasswordInput)
+
