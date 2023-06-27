@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="{% static 'assets/estilos.css' %}" />
-    <title>Mis inmuebles</title>
+    <title>Mis instrumentos</title>
   </head>
 
   <body>
@@ -31,7 +31,7 @@
       <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link" href={% url "home" %}> Inicio</a></li>
         <li class="nav-item"><a class="nav-link" href={% url 'clientes' %}> Clientes</a></li>
-        <li class="nav-item"><a class="nav-link" href=""> Registro Proveedores</a></li>
+        <li class="nav-item"><a class="nav-link" href={% url 'proveedores' %}> Registro Proveedores</a></li>
       </ul>
     </nav>
     {% block contenido %}{% endblock %} {% block destacados %}{% endblock %}
