@@ -1,0 +1,14 @@
+{% extends 'app_tlv/base.html' %} {% block contenido %} {% if messages %} {%for
+message in messages %}
+<div class="{{message.tags}}">{{message|capfirst}}</div>
+{% endfor %} {% endif %}
+
+<form action="" , method="POST">
+  {% csrf_token %}
+  <table>
+    {{form.as_table}}
+  </table>
+  <button type="Submit" class="btn btn-primary">Registrarse</button>
+</form>
+
+{% endblock %}
